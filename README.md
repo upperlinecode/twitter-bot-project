@@ -13,7 +13,7 @@ Check out these examples of great Twitter bots:
 + [The best bots of 2015](http://qz.com/279139/the-17-best-bots-on-twitter/)
 
 ## Ideation
-Take 5 minutes with your team to pick a process that you want to try and automate with your bot. What will it do? How will it work? What will it be called
+Take 5 minutes with your team to pick a process that you want to try and automate with your bot. What will it do? How will it work? What will it be called?
 
 ## Setup
 Now that you've decided on a goal for your bot, follow these setup instructions to get started!
@@ -25,13 +25,40 @@ Now that you've decided on a goal for your bot, follow these setup instructions 
 + In your repository, create a file called `.env`. In the file, add the following code:
 
 ```ruby
-ENV["CONSUMER_KEY"] = "your consumer key"
-ENV["CONSUMER_SECRET"] = "your consumer secret"
-ENV["ACCESS_TOKEN"] = "your access token"
-ENV["ACCESS_TOKEN_SECRET"] = "your access token secret"
+CONSUMER_KEY = "your consumer key"
+CONSUMER_SECRET = "your consumer secret"
+ACCESS_TOKEN = "your access token"
+ACCESS_TOKEN_SECRET = "your access token secret"
 ```
 
 + Your consumer key, consumer secret, access token, and access token secret can all be found on the app page that you opened at apps.twitter.com under 'Keys and Access Tokens'. To get an access token, click on "Generate my Access Token and Access Token Secret". Paste all of these keys and tokens into the correct place in your .env file.
 
 ## Bot Making Time!
 
+Check out the documentation for the Twitter Gem: [https://github.com/sferik/twitter]. 
+
+In your app.rb file, take some time to get acquainted with the 'twitter' gem's capabilities. For example, if you want to tweet directly from the gem, run:
+
+```
+client.update("I'm tweeting from the command line!")
+```
+
+Figure out how to:
+- Follow a user
+- See a user's last ten tweets
+- Get a list of a user's followers
+- Get a link to a user's profile image
+- Get a list of trending topics
+
+To run your program (to test it), run `ruby app.rb` from the command line.
+
+Now, take your time and build out your twitter bot! Remember to figure out the logic of what you want to do before writing the code.
+
+Make sure to push all of your code back up to Github!
+
+## Deploy to Heroku!
+Now that you have a Twitter bot that works locally, it's time to put it online so that it runs automatically! Follow these instructions:
++ If you don't have a [Heroku](https://www.heroku.com/) account yet, sign up. Otherwise, log in to your dashboard.
++ Create a new app.
++ Connect your app to the github repo under the "Deploy" tab, and then deploy!
++ heroku scheduler...
