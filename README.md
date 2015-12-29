@@ -4,9 +4,9 @@ In this group project, we'll be using our Ruby skills to build out our very own 
 
 ##Examples
 Check out these examples of great Twitter bots:
-+ (@pentametron)[https://twitter.com/pentametron?lang=en] - Retweets in Iambic Pentameter
-+ (@everyword)[https://twitter.com/everyword] - Tweets every word in the English Language
-+ (The best bots of 2015)[http://qz.com/279139/the-17-best-bots-on-twitter/]
++ [@pentametron](https://twitter.com/pentametron?lang=en) - Retweets in Iambic Pentameter
++ [@everyword](https://twitter.com/everyword) - Tweets every word in the English Language
++ [The best bots of 2015](http://qz.com/279139/the-17-best-bots-on-twitter/)
 
 ## Setup
 Before we get started, take 
